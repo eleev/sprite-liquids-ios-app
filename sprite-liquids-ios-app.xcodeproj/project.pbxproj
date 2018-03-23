@@ -81,8 +81,8 @@
 		A922868A1F9B80AD0012FD44 /* LQKImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKImageUtils.h; sourceTree = "<group>"; };
 		A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LQKImageUtils+iOSUtils.m"; sourceTree = "<group>"; };
 		A922868D1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LQKImageUtils+iOSUtils.h"; sourceTree = "<group>"; };
-		A922868E1F9B80AD0012FD44 /* LiquidKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiquidKit-Prefix.pch"; sourceTree = "<group>"; };
-		A922868F1F9B80AD0012FD44 /* LiquidKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquidKit.h; sourceTree = "<group>"; };
+		A922868E1F9B80AD0012FD44 /* SpriteLiquids-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpriteLiquids-Prefix.pch"; sourceTree = "<group>"; };
+		A922868F1F9B80AD0012FD44 /* SpriteLiquids.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteLiquids.h; sourceTree = "<group>"; };
 		A92286911F9B80B80012FD44 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		A94A50751F9BA2A6003AF86C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		A94A50771F9BA780003AF86C /* RotationAction.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RotationAction.sks; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 			children = (
 				A92286461F9B807D0012FD44 /* AppDelegate.h */,
 				A92286471F9B807D0012FD44 /* AppDelegate.m */,
-				A922868E1F9B80AD0012FD44 /* LiquidKit-Prefix.pch */,
-				A922868F1F9B80AD0012FD44 /* LiquidKit.h */,
+				A922868E1F9B80AD0012FD44 /* SpriteLiquids-Prefix.pch */,
+				A922868F1F9B80AD0012FD44 /* SpriteLiquids.h */,
 				A92286561F9B807D0012FD44 /* Assets.xcassets */,
 				A922865B1F9B807D0012FD44 /* Info.plist */,
 				A922865C1F9B807D0012FD44 /* main.m */,
