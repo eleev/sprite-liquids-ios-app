@@ -1,5 +1,5 @@
 # sprite-liquids-ios-app
-Demonstrates a practical approach for liquid visualization using SpriteKit and CoreImage frameworks 💧
+Demonstrates a practical approach for liquid visualization using SpriteKit and CoreImage frameworks 💧. Feel free to use this development in your `games`, as part of your `UI` or to `visualize` something. `Swift` version is planned and will be added as well `optimization` and creation of more `conscious API`.
 
 # Demo 
 
