@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LiquidDemo.xcodeproj">
+      location = "self:/Users/astemireleev/Documents/LiquidDemo/sprite-liquids-ios-app.xcodeproj">
    </FileRef>
 </Workspace>

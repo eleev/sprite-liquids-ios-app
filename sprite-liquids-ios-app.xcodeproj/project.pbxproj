@@ -18,6 +18,16 @@
 		A922865D1F9B807D0012FD44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A922865C1F9B807D0012FD44 /* main.m */; };
 		A92286671F9B807D0012FD44 /* LiquidDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286661F9B807D0012FD44 /* LiquidDemoTests.m */; };
 		A92286721F9B807D0012FD44 /* LiquidDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286711F9B807D0012FD44 /* LiquidDemoUITests.m */; };
+		A92286921F9B80B80012FD44 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92286911F9B80B80012FD44 /* SpriteKit.framework */; };
+		A92286931F9B80C80012FD44 /* LQKSolidColorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286801F9B80AC0012FD44 /* LQKSolidColorEffect.m */; };
+		A92286951F9B80C80012FD44 /* LQKLiquidNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286821F9B80AD0012FD44 /* LQKLiquidNode.m */; };
+		A92286971F9B80C80012FD44 /* LQKImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286841F9B80AD0012FD44 /* LQKImageUtils.m */; };
+		A92286981F9B80C80012FD44 /* LQKCILiquidFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286851F9B80AD0012FD44 /* LQKCILiquidFilter.m */; };
+		A922869C1F9B80C80012FD44 /* LQKLiquidParticleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286891F9B80AD0012FD44 /* LQKLiquidParticleFactory.m */; };
+		A922869E1F9B80C80012FD44 /* LQKImageUtils+iOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */; };
+		A94A50761F9BA2A6003AF86C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A50751F9BA2A6003AF86C /* CoreMotion.framework */; };
+		A94A50781F9BA780003AF86C /* RotationAction.sks in Resources */ = {isa = PBXBuildFile; fileRef = A94A50771F9BA780003AF86C /* RotationAction.sks */; };
+		A9DF00CF2065201A004BFBF2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A9DF00CE2065201A004BFBF2 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A92286431F9B807D0012FD44 /* LiquidDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiquidDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92286431F9B807D0012FD44 /* sprite-liquids-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sprite-liquids-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92286461F9B807D0012FD44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A92286471F9B807D0012FD44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A92286491F9B807D0012FD44 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -52,12 +62,31 @@
 		A92286591F9B807D0012FD44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A922865B1F9B807D0012FD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A922865C1F9B807D0012FD44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A92286621F9B807D0012FD44 /* LiquidDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92286621F9B807D0012FD44 /* sprite-liquids-ios-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sprite-liquids-ios-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92286661F9B807D0012FD44 /* LiquidDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquidDemoTests.m; sourceTree = "<group>"; };
 		A92286681F9B807D0012FD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A922866D1F9B807D0012FD44 /* LiquidDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A922866D1F9B807D0012FD44 /* sprite-liquids-ios-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sprite-liquids-ios-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92286711F9B807D0012FD44 /* LiquidDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquidDemoUITests.m; sourceTree = "<group>"; };
 		A92286731F9B807D0012FD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92286801F9B80AC0012FD44 /* LQKSolidColorEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKSolidColorEffect.m; sourceTree = "<group>"; };
+		A92286811F9B80AC0012FD44 /* LQKCILiquidFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKCILiquidFilter.h; sourceTree = "<group>"; };
+		A92286821F9B80AD0012FD44 /* LQKLiquidNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKLiquidNode.m; sourceTree = "<group>"; };
+		A92286831F9B80AD0012FD44 /* LQKLiquidParticleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKLiquidParticleFactory.h; sourceTree = "<group>"; };
+		A92286841F9B80AD0012FD44 /* LQKImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKImageUtils.m; sourceTree = "<group>"; };
+		A92286851F9B80AD0012FD44 /* LQKCILiquidFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKCILiquidFilter.m; sourceTree = "<group>"; };
+		A92286861F9B80AD0012FD44 /* LQKSolidColorEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKSolidColorEffect.h; sourceTree = "<group>"; };
+		A92286871F9B80AD0012FD44 /* LQKLiquidNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKLiquidNode.h; sourceTree = "<group>"; };
+		A92286881F9B80AD0012FD44 /* LQKLiquidEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKLiquidEffect.h; sourceTree = "<group>"; };
+		A92286891F9B80AD0012FD44 /* LQKLiquidParticleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKLiquidParticleFactory.m; sourceTree = "<group>"; };
+		A922868A1F9B80AD0012FD44 /* LQKImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKImageUtils.h; sourceTree = "<group>"; };
+		A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LQKImageUtils+iOSUtils.m"; sourceTree = "<group>"; };
+		A922868D1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LQKImageUtils+iOSUtils.h"; sourceTree = "<group>"; };
+		A922868E1F9B80AD0012FD44 /* LiquidKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiquidKit-Prefix.pch"; sourceTree = "<group>"; };
+		A922868F1F9B80AD0012FD44 /* LiquidKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquidKit.h; sourceTree = "<group>"; };
+		A92286911F9B80B80012FD44 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A94A50751F9BA2A6003AF86C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A94A50771F9BA780003AF86C /* RotationAction.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RotationAction.sks; sourceTree = "<group>"; };
+		A9DF00CE2065201A004BFBF2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94A50761F9BA2A6003AF86C /* CoreMotion.framework in Frameworks */,
+				A92286921F9B80B80012FD44 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,67 +119,142 @@
 		A922863A1F9B807D0012FD44 = {
 			isa = PBXGroup;
 			children = (
-				A92286451F9B807D0012FD44 /* LiquidDemo */,
-				A92286651F9B807D0012FD44 /* LiquidDemoTests */,
-				A92286701F9B807D0012FD44 /* LiquidDemoUITests */,
+				A9DF00CE2065201A004BFBF2 /* .gitignore */,
+				A92286451F9B807D0012FD44 /* sprite-liquids-ios-app */,
+				A92286651F9B807D0012FD44 /* sprite-liquids-ios-app-tests */,
+				A92286701F9B807D0012FD44 /* sprite-liquids-ios-app-UI-tests */,
 				A92286441F9B807D0012FD44 /* Products */,
+				A92286901F9B80B80012FD44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A92286441F9B807D0012FD44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A92286431F9B807D0012FD44 /* LiquidDemo.app */,
-				A92286621F9B807D0012FD44 /* LiquidDemoTests.xctest */,
-				A922866D1F9B807D0012FD44 /* LiquidDemoUITests.xctest */,
+				A92286431F9B807D0012FD44 /* sprite-liquids-ios-app.app */,
+				A92286621F9B807D0012FD44 /* sprite-liquids-ios-appTests.xctest */,
+				A922866D1F9B807D0012FD44 /* sprite-liquids-ios-appUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A92286451F9B807D0012FD44 /* LiquidDemo */ = {
+		A92286451F9B807D0012FD44 /* sprite-liquids-ios-app */ = {
 			isa = PBXGroup;
 			children = (
 				A92286461F9B807D0012FD44 /* AppDelegate.h */,
 				A92286471F9B807D0012FD44 /* AppDelegate.m */,
-				A92286491F9B807D0012FD44 /* GameScene.sks */,
-				A922864B1F9B807D0012FD44 /* Actions.sks */,
-				A922864D1F9B807D0012FD44 /* GameScene.h */,
-				A922864E1F9B807D0012FD44 /* GameScene.m */,
-				A92286501F9B807D0012FD44 /* GameViewController.h */,
-				A92286511F9B807D0012FD44 /* GameViewController.m */,
-				A92286531F9B807D0012FD44 /* Main.storyboard */,
+				A922868E1F9B80AD0012FD44 /* LiquidKit-Prefix.pch */,
+				A922868F1F9B80AD0012FD44 /* LiquidKit.h */,
 				A92286561F9B807D0012FD44 /* Assets.xcassets */,
-				A92286581F9B807D0012FD44 /* LaunchScreen.storyboard */,
 				A922865B1F9B807D0012FD44 /* Info.plist */,
 				A922865C1F9B807D0012FD44 /* main.m */,
+				A9DF00CD20651A67004BFBF2 /* View */,
+				A9DF00CC206518E5004BFBF2 /* Scenes */,
+				A9DF00CB206518DB004BFBF2 /* Controller */,
+				A9DF00CA206518CB004BFBF2 /* SpriteKit Assets */,
+				A922867F1F9B80AC0012FD44 /* Common */,
+				A922868B1F9B80AD0012FD44 /* iOS */,
 			);
-			path = LiquidDemo;
+			path = "sprite-liquids-ios-app";
 			sourceTree = "<group>";
 		};
-		A92286651F9B807D0012FD44 /* LiquidDemoTests */ = {
+		A92286651F9B807D0012FD44 /* sprite-liquids-ios-app-tests */ = {
 			isa = PBXGroup;
 			children = (
 				A92286661F9B807D0012FD44 /* LiquidDemoTests.m */,
 				A92286681F9B807D0012FD44 /* Info.plist */,
 			);
-			path = LiquidDemoTests;
+			path = "sprite-liquids-ios-app-tests";
 			sourceTree = "<group>";
 		};
-		A92286701F9B807D0012FD44 /* LiquidDemoUITests */ = {
+		A92286701F9B807D0012FD44 /* sprite-liquids-ios-app-UI-tests */ = {
 			isa = PBXGroup;
 			children = (
 				A92286711F9B807D0012FD44 /* LiquidDemoUITests.m */,
 				A92286731F9B807D0012FD44 /* Info.plist */,
 			);
-			path = LiquidDemoUITests;
+			path = "sprite-liquids-ios-app-UI-tests";
+			sourceTree = "<group>";
+		};
+		A922867F1F9B80AC0012FD44 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A92286801F9B80AC0012FD44 /* LQKSolidColorEffect.m */,
+				A92286811F9B80AC0012FD44 /* LQKCILiquidFilter.h */,
+				A92286821F9B80AD0012FD44 /* LQKLiquidNode.m */,
+				A92286831F9B80AD0012FD44 /* LQKLiquidParticleFactory.h */,
+				A92286841F9B80AD0012FD44 /* LQKImageUtils.m */,
+				A92286851F9B80AD0012FD44 /* LQKCILiquidFilter.m */,
+				A92286861F9B80AD0012FD44 /* LQKSolidColorEffect.h */,
+				A92286871F9B80AD0012FD44 /* LQKLiquidNode.h */,
+				A92286881F9B80AD0012FD44 /* LQKLiquidEffect.h */,
+				A92286891F9B80AD0012FD44 /* LQKLiquidParticleFactory.m */,
+				A922868A1F9B80AD0012FD44 /* LQKImageUtils.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A922868B1F9B80AD0012FD44 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */,
+				A922868D1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.h */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A92286901F9B80B80012FD44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94A50751F9BA2A6003AF86C /* CoreMotion.framework */,
+				A92286911F9B80B80012FD44 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9DF00CA206518CB004BFBF2 /* SpriteKit Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A92286491F9B807D0012FD44 /* GameScene.sks */,
+				A922864B1F9B807D0012FD44 /* Actions.sks */,
+				A94A50771F9BA780003AF86C /* RotationAction.sks */,
+			);
+			path = "SpriteKit Assets";
+			sourceTree = "<group>";
+		};
+		A9DF00CB206518DB004BFBF2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A92286501F9B807D0012FD44 /* GameViewController.h */,
+				A92286511F9B807D0012FD44 /* GameViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9DF00CC206518E5004BFBF2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A922864D1F9B807D0012FD44 /* GameScene.h */,
+				A922864E1F9B807D0012FD44 /* GameScene.m */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A9DF00CD20651A67004BFBF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A92286531F9B807D0012FD44 /* Main.storyboard */,
+				A92286581F9B807D0012FD44 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A92286421F9B807D0012FD44 /* LiquidDemo */ = {
+		A92286421F9B807D0012FD44 /* sprite-liquids-ios-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A92286761F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "LiquidDemo" */;
+			buildConfigurationList = A92286761F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "sprite-liquids-ios-app" */;
 			buildPhases = (
 				A922863F1F9B807D0012FD44 /* Sources */,
 				A92286401F9B807D0012FD44 /* Frameworks */,
@@ -158,14 +264,14 @@
 			);
 			dependencies = (
 			);
-			name = LiquidDemo;
+			name = "sprite-liquids-ios-app";
 			productName = LiquidDemo;
-			productReference = A92286431F9B807D0012FD44 /* LiquidDemo.app */;
+			productReference = A92286431F9B807D0012FD44 /* sprite-liquids-ios-app.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A92286611F9B807D0012FD44 /* LiquidDemoTests */ = {
+		A92286611F9B807D0012FD44 /* sprite-liquids-ios-appTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A92286791F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "LiquidDemoTests" */;
+			buildConfigurationList = A92286791F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "sprite-liquids-ios-appTests" */;
 			buildPhases = (
 				A922865E1F9B807D0012FD44 /* Sources */,
 				A922865F1F9B807D0012FD44 /* Frameworks */,
@@ -176,14 +282,14 @@
 			dependencies = (
 				A92286641F9B807D0012FD44 /* PBXTargetDependency */,
 			);
-			name = LiquidDemoTests;
+			name = "sprite-liquids-ios-appTests";
 			productName = LiquidDemoTests;
-			productReference = A92286621F9B807D0012FD44 /* LiquidDemoTests.xctest */;
+			productReference = A92286621F9B807D0012FD44 /* sprite-liquids-ios-appTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A922866C1F9B807D0012FD44 /* LiquidDemoUITests */ = {
+		A922866C1F9B807D0012FD44 /* sprite-liquids-ios-appUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A922867C1F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "LiquidDemoUITests" */;
+			buildConfigurationList = A922867C1F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "sprite-liquids-ios-appUITests" */;
 			buildPhases = (
 				A92286691F9B807D0012FD44 /* Sources */,
 				A922866A1F9B807D0012FD44 /* Frameworks */,
@@ -194,9 +300,9 @@
 			dependencies = (
 				A922866F1F9B807D0012FD44 /* PBXTargetDependency */,
 			);
-			name = LiquidDemoUITests;
+			name = "sprite-liquids-ios-appUITests";
 			productName = LiquidDemoUITests;
-			productReference = A922866D1F9B807D0012FD44 /* LiquidDemoUITests.xctest */;
+			productReference = A922866D1F9B807D0012FD44 /* sprite-liquids-ios-appUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +330,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A922863E1F9B807D0012FD44 /* Build configuration list for PBXProject "LiquidDemo" */;
+			buildConfigurationList = A922863E1F9B807D0012FD44 /* Build configuration list for PBXProject "sprite-liquids-ios-app" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -237,9 +343,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A92286421F9B807D0012FD44 /* LiquidDemo */,
-				A92286611F9B807D0012FD44 /* LiquidDemoTests */,
-				A922866C1F9B807D0012FD44 /* LiquidDemoUITests */,
+				A92286421F9B807D0012FD44 /* sprite-liquids-ios-app */,
+				A92286611F9B807D0012FD44 /* sprite-liquids-ios-appTests */,
+				A922866C1F9B807D0012FD44 /* sprite-liquids-ios-appUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,10 +356,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92286551F9B807D0012FD44 /* Main.storyboard in Resources */,
+				A9DF00CF2065201A004BFBF2 /* .gitignore in Resources */,
 				A922864A1F9B807D0012FD44 /* GameScene.sks in Resources */,
 				A92286571F9B807D0012FD44 /* Assets.xcassets in Resources */,
 				A922865A1F9B807D0012FD44 /* LaunchScreen.storyboard in Resources */,
 				A922864C1F9B807D0012FD44 /* Actions.sks in Resources */,
+				A94A50781F9BA780003AF86C /* RotationAction.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92286931F9B80C80012FD44 /* LQKSolidColorEffect.m in Sources */,
+				A92286951F9B80C80012FD44 /* LQKLiquidNode.m in Sources */,
+				A92286971F9B80C80012FD44 /* LQKImageUtils.m in Sources */,
+				A92286981F9B80C80012FD44 /* LQKCILiquidFilter.m in Sources */,
+				A922869C1F9B80C80012FD44 /* LQKLiquidParticleFactory.m in Sources */,
+				A922869E1F9B80C80012FD44 /* LQKImageUtils+iOSUtils.m in Sources */,
 				A922864F1F9B807D0012FD44 /* GameScene.m in Sources */,
 				A92286521F9B807D0012FD44 /* GameViewController.m in Sources */,
 				A922865D1F9B807D0012FD44 /* main.m in Sources */,
@@ -306,12 +420,12 @@
 /* Begin PBXTargetDependency section */
 		A92286641F9B807D0012FD44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A92286421F9B807D0012FD44 /* LiquidDemo */;
+			target = A92286421F9B807D0012FD44 /* sprite-liquids-ios-app */;
 			targetProxy = A92286631F9B807D0012FD44 /* PBXContainerItemProxy */;
 		};
 		A922866F1F9B807D0012FD44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A92286421F9B807D0012FD44 /* LiquidDemo */;
+			target = A92286421F9B807D0012FD44 /* sprite-liquids-ios-app */;
 			targetProxy = A922866E1F9B807D0012FD44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -445,10 +559,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
-				INFOPLIST_FILE = LiquidDemo/Info.plist;
+				DEVELOPMENT_TEAM = T3K58FE38R;
+				INFOPLIST_FILE = "$(SRCROOT)/sprite-liquids-ios-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.LiquidDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.sprite-liquids";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,10 +573,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
-				INFOPLIST_FILE = LiquidDemo/Info.plist;
+				DEVELOPMENT_TEAM = T3K58FE38R;
+				INFOPLIST_FILE = "$(SRCROOT)/sprite-liquids-ios-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.LiquidDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "eleev.astemir.io.sprite-liquids";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,7 +593,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.LiquidDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquidDemo.app/LiquidDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sprite-liquids-ios-app.app/sprite-liquids-ios-app";
 			};
 			name = Debug;
 		};
@@ -494,7 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.LiquidDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiquidDemo.app/LiquidDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sprite-liquids-ios-app.app/sprite-liquids-ios-app";
 			};
 			name = Release;
 		};
@@ -529,7 +643,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A922863E1F9B807D0012FD44 /* Build configuration list for PBXProject "LiquidDemo" */ = {
+		A922863E1F9B807D0012FD44 /* Build configuration list for PBXProject "sprite-liquids-ios-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A92286741F9B807D0012FD44 /* Debug */,
@@ -538,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A92286761F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "LiquidDemo" */ = {
+		A92286761F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "sprite-liquids-ios-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A92286771F9B807D0012FD44 /* Debug */,
@@ -547,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A92286791F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "LiquidDemoTests" */ = {
+		A92286791F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "sprite-liquids-ios-appTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A922867A1F9B807D0012FD44 /* Debug */,
@@ -556,7 +670,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A922867C1F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "LiquidDemoUITests" */ = {
+		A922867C1F9B807D0012FD44 /* Build configuration list for PBXNativeTarget "sprite-liquids-ios-appUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A922867D1F9B807D0012FD44 /* Debug */,
