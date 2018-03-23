@@ -587,7 +587,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = LiquidDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.LiquidDemoTests;
@@ -602,7 +602,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EK3QDL7K69;
+				DEVELOPMENT_TEAM = T3K58FE38R;
 				INFOPLIST_FILE = LiquidDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = projectk.io.LiquidDemoTests;
