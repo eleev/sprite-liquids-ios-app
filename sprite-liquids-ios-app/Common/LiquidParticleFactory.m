@@ -6,10 +6,10 @@
 //  Copyright (c) 2017 Astemir Eleev
 //
 
-#import "LQKLiquidParticleFactory.h"
+#import "LiquidParticleFactory.h"
 #import "LQKImageUtils.h"
 
-@implementation LQKLiquidParticleFactory
+@implementation LiquidParticleFactory
 
 /* Constants */
 

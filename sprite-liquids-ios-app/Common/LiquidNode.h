@@ -9,7 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "LQKImageUtils.h"
 
-@interface LQKLiquidNode : SKEffectNode
+@interface LiquidNode : SKEffectNode
 
 - (id) initWithBlurRadius:(NSInteger)radius withLiquidFilter:(CIFilter *)filter;
 

@@ -6,11 +6,11 @@
 //  Copyright (c) 2017 Astemir Eleev
 //
 
-#import "LQKCILiquidFilter.h"
+#import "LiquidFilter.h"
 
 #define GEN_COLOR_PADDING 12
 
-@implementation LQKCILiquidFilter
+@implementation LiquidFilter
 
 @synthesize inputImage;
 

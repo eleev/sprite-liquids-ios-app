@@ -10,7 +10,7 @@
 
 #import "LQKLiquidEffect.h"
 
-@interface LQKSolidColorEffect : NSObject<LQKLiquidEffect>
+@interface SolidColorEffect : NSObject<LQKLiquidEffect>
 
 /* Properties */
 @property XXColor* color;

@@ -13,7 +13,6 @@
 @protocol LQKLiquidEffect<NSObject>
 
 - (CIImage *) thresholdGradient;
-
 - (CIImage *) postProcessedFrameFrom:(CIImage *)input;
 
 @end

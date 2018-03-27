@@ -8,7 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface LQKLiquidParticleFactory : NSObject
+@interface LiquidParticleFactory : NSObject
 
 /* Constants */
 extern const CGFloat CIRCLE_COLOR[];

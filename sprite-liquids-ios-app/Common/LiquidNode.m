@@ -6,10 +6,10 @@
 //  Copyright (c) 2017 Astemir Eleev
 //
 
-#import "LQKLiquidNode.h"
-#import "LQKCILiquidFilter.h"
+#import "LiquidNode.h"
+#import "LiquidFilter.h"
 
-@implementation LQKLiquidNode
+@implementation LiquidNode
 
 - (id) initWithBlurRadius:(NSInteger)radius withLiquidFilter:(CIFilter *)filter {
     

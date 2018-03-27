@@ -6,9 +6,9 @@
 //  Copyright (c) 2017 Astemir Eleev
 //
 
-#import "LQKSolidColorEffect.h"
+#import "SolidColorEffect.h"
 
-@implementation LQKSolidColorEffect
+@implementation SolidColorEffect
 
 - (id) initWithColor:(XXColor*)color withIndex:(CGFloat)index withWidth:(CGFloat)width {
     if (self = [super init]) {

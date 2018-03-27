@@ -14,7 +14,7 @@
 
 #import "LQKLiquidEffect.h"
 
-@interface LQKCILiquidFilter: CIFilter {
+@interface LiquidFilter: CIFilter {
     CIImage *inputImage;
 }
 
