@@ -8,10 +8,10 @@
 
 #import "GameScene.h"
 
-#import "LQKSolidColorEffect.h"
-#import "LQKCILiquidFilter.h"
-#import "LQKLiquidParticleFactory.h"
-#import "LQKLiquidNode.h"
+#import "SolidColorEffect.h"
+#import "LiquidFilter.h"
+#import "LiquidParticleFactory.h"
+#import "LiquidNode.h"
 
 @import CoreMotion;
 
@@ -20,7 +20,7 @@
     CMMotionManager* motionManager;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)coder {
+-(instancetype)initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         
@@ -28,49 +28,66 @@
         fieldNode.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:60];
         fieldNode.strength = 3.0;
         
-        int particles = 120;
+        int particles = 90;
         [self createaLiquid:particles];
     }
     return self;
 }
 
-- (void)didMoveToView:(SKView *)view {
+-(void)didMoveToView:(SKView *)view {
     // Setup your scene here
     
     motionManager = [CMMotionManager new];
     [motionManager startAccelerometerUpdates];
 }
 
-- (void)createaLiquid:(int) particlesCount {
+-(void)createaLiquid:(int) particlesCount {
     // TODO: The following function requires refactoring:
     // 1. Eliminate magical numbers
     // 2. Make it more weakly-coupled and provide possibility to change physical and visual properties of liquid particles
     
+    int blurRadius = 60;
+    int particleRadius = 18;
+    
     /* Create a texturing strategy for the liquid -- built-in, or on your own */
-    LQKSolidColorEffect *solidEffect = [[LQKSolidColorEffect alloc] initWithColor:[UIColor magentaColor] withIndex:100 withWidth:256];
+    SolidColorEffect *solidEffect = [[SolidColorEffect alloc] initWithColor:[UIColor colorWithRed:0.2 green:0.2 blue:1.0 alpha:0.6] withIndex:100 withWidth:256];
     
     /* Create a liquid filter with the liquid texturing effect */
-    LQKCILiquidFilter *filter = [[LQKCILiquidFilter alloc] initWithBlurRadius:40 withLiquidEffect:solidEffect];
+    LiquidFilter *filter = [[LiquidFilter alloc] initWithBlurRadius:blurRadius withLiquidEffect:solidEffect];
     
     /* Create a liquid node with the liquid filter */
-    SKNode *liquidNode = [[LQKLiquidNode alloc] initWithBlurRadius:40 withLiquidFilter:filter];
+    SKNode *liquidNode = [[LiquidNode alloc] initWithBlurRadius:blurRadius withLiquidFilter:filter];
+    liquidNode.name = @"liquid-node";
     
     /* Create a particle factory that can produce optimized particles of a given size */
-    LQKLiquidParticleFactory *liquidParticleFactory = [[LQKLiquidParticleFactory alloc] initWithRadius:15];
+    LiquidParticleFactory *liquidParticleFactory = [[LiquidParticleFactory alloc] initWithRadius:particleRadius];
+    
+    CGFloat midX = CGRectGetMidX(self.view.bounds) / 2;
+    CGFloat midY = CGRectGetMidY(self.view.bounds);
+    midY = midY + 300;
     
     for (int p = 0; p < particlesCount; p++) {
-    
-        /* Spawn a single bead of liquid */
-        SKNode *particleNode = [liquidParticleFactory createLiquidParticle];
-        particleNode.position = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
-        particleNode.physicsBody.density = 35;
-        particleNode.physicsBody.mass = 0.25;
-        
-        /* Add the particle to the liquid so it will adopt its visual properties */
-        [liquidNode addChild:particleNode];
-
+        dispatch_async(dispatch_get_main_queue(), ^{
+            /* Spawn a single bead of liquid */
+            SKNode *particleNode = [liquidParticleFactory createLiquidParticle];
+            CGPoint position = CGPointMake(midX + p / 2, midY);
+            particleNode.position = position;
+            particleNode.physicsBody.density = 50.0;
+            particleNode.physicsBody.mass = 0.5;
+            particleNode.physicsBody.restitution = 0.1;
+            
+            /* Add the particle to the liquid so it will adopt its visual properties */
+            [liquidNode addChild:particleNode];
+        });
     }
     [self addChild:liquidNode];
+}
+
+-(void) removeLiquid {
+    SKNode *liquidNode = [self childNodeWithName:@"liquid-node"];
+    [liquidNode removeAllChildren];
+    [liquidNode removeAllActions];
+    [liquidNode removeFromParent];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -97,13 +114,13 @@
 -(void)update:(CFTimeInterval)currentTime {
     // Called before each frame is rendered
 
-    /*
+/*
     CMAccelerometerData* data = [motionManager accelerometerData];
     
     if (data != nil) {
-//        self.physicsWorld.gravity = CGVectorMake(data.acceleration.y * -100, data.acceleration.x * 100);
+        self.physicsWorld.gravity = CGVectorMake(data.acceleration.y * -1, data.acceleration.x * -1);
     }
-     */
+*/
 }
 
 @end

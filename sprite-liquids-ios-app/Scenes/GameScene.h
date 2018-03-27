@@ -11,6 +11,7 @@
 
 @interface GameScene : SKScene
 
-// Empty interface
+- (void) createaLiquid:(int) particlesCount;
+- (void) removeLiquid;
 
 @end
