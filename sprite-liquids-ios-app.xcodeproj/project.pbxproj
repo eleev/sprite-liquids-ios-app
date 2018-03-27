@@ -19,11 +19,11 @@
 		A92286671F9B807D0012FD44 /* LiquidDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286661F9B807D0012FD44 /* LiquidDemoTests.m */; };
 		A92286721F9B807D0012FD44 /* LiquidDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286711F9B807D0012FD44 /* LiquidDemoUITests.m */; };
 		A92286921F9B80B80012FD44 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92286911F9B80B80012FD44 /* SpriteKit.framework */; };
-		A92286931F9B80C80012FD44 /* LQKSolidColorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286801F9B80AC0012FD44 /* LQKSolidColorEffect.m */; };
-		A92286951F9B80C80012FD44 /* LQKLiquidNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286821F9B80AD0012FD44 /* LQKLiquidNode.m */; };
+		A92286931F9B80C80012FD44 /* SolidColorEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286801F9B80AC0012FD44 /* SolidColorEffect.m */; };
+		A92286951F9B80C80012FD44 /* LiquidNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286821F9B80AD0012FD44 /* LiquidNode.m */; };
 		A92286971F9B80C80012FD44 /* LQKImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286841F9B80AD0012FD44 /* LQKImageUtils.m */; };
-		A92286981F9B80C80012FD44 /* LQKCILiquidFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286851F9B80AD0012FD44 /* LQKCILiquidFilter.m */; };
-		A922869C1F9B80C80012FD44 /* LQKLiquidParticleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286891F9B80AD0012FD44 /* LQKLiquidParticleFactory.m */; };
+		A92286981F9B80C80012FD44 /* LiquidFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286851F9B80AD0012FD44 /* LiquidFilter.m */; };
+		A922869C1F9B80C80012FD44 /* LiquidParticleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A92286891F9B80AD0012FD44 /* LiquidParticleFactory.m */; };
 		A922869E1F9B80C80012FD44 /* LQKImageUtils+iOSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */; };
 		A94A50761F9BA2A6003AF86C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A50751F9BA2A6003AF86C /* CoreMotion.framework */; };
 		A94A50781F9BA780003AF86C /* RotationAction.sks in Resources */ = {isa = PBXBuildFile; fileRef = A94A50771F9BA780003AF86C /* RotationAction.sks */; };
@@ -68,16 +68,16 @@
 		A922866D1F9B807D0012FD44 /* sprite-liquids-ios-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sprite-liquids-ios-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92286711F9B807D0012FD44 /* LiquidDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquidDemoUITests.m; sourceTree = "<group>"; };
 		A92286731F9B807D0012FD44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A92286801F9B80AC0012FD44 /* LQKSolidColorEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKSolidColorEffect.m; sourceTree = "<group>"; };
-		A92286811F9B80AC0012FD44 /* LQKCILiquidFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKCILiquidFilter.h; sourceTree = "<group>"; };
-		A92286821F9B80AD0012FD44 /* LQKLiquidNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKLiquidNode.m; sourceTree = "<group>"; };
-		A92286831F9B80AD0012FD44 /* LQKLiquidParticleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKLiquidParticleFactory.h; sourceTree = "<group>"; };
+		A92286801F9B80AC0012FD44 /* SolidColorEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolidColorEffect.m; sourceTree = "<group>"; };
+		A92286811F9B80AC0012FD44 /* LiquidFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquidFilter.h; sourceTree = "<group>"; };
+		A92286821F9B80AD0012FD44 /* LiquidNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquidNode.m; sourceTree = "<group>"; };
+		A92286831F9B80AD0012FD44 /* LiquidParticleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquidParticleFactory.h; sourceTree = "<group>"; };
 		A92286841F9B80AD0012FD44 /* LQKImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKImageUtils.m; sourceTree = "<group>"; };
-		A92286851F9B80AD0012FD44 /* LQKCILiquidFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKCILiquidFilter.m; sourceTree = "<group>"; };
-		A92286861F9B80AD0012FD44 /* LQKSolidColorEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKSolidColorEffect.h; sourceTree = "<group>"; };
-		A92286871F9B80AD0012FD44 /* LQKLiquidNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKLiquidNode.h; sourceTree = "<group>"; };
+		A92286851F9B80AD0012FD44 /* LiquidFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquidFilter.m; sourceTree = "<group>"; };
+		A92286861F9B80AD0012FD44 /* SolidColorEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SolidColorEffect.h; sourceTree = "<group>"; };
+		A92286871F9B80AD0012FD44 /* LiquidNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiquidNode.h; sourceTree = "<group>"; };
 		A92286881F9B80AD0012FD44 /* LQKLiquidEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKLiquidEffect.h; sourceTree = "<group>"; };
-		A92286891F9B80AD0012FD44 /* LQKLiquidParticleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LQKLiquidParticleFactory.m; sourceTree = "<group>"; };
+		A92286891F9B80AD0012FD44 /* LiquidParticleFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiquidParticleFactory.m; sourceTree = "<group>"; };
 		A922868A1F9B80AD0012FD44 /* LQKImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LQKImageUtils.h; sourceTree = "<group>"; };
 		A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LQKImageUtils+iOSUtils.m"; sourceTree = "<group>"; };
 		A922868D1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LQKImageUtils+iOSUtils.h"; sourceTree = "<group>"; };
@@ -179,17 +179,17 @@
 		A922867F1F9B80AC0012FD44 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				A92286801F9B80AC0012FD44 /* LQKSolidColorEffect.m */,
-				A92286811F9B80AC0012FD44 /* LQKCILiquidFilter.h */,
-				A92286821F9B80AD0012FD44 /* LQKLiquidNode.m */,
-				A92286831F9B80AD0012FD44 /* LQKLiquidParticleFactory.h */,
-				A92286841F9B80AD0012FD44 /* LQKImageUtils.m */,
-				A92286851F9B80AD0012FD44 /* LQKCILiquidFilter.m */,
-				A92286861F9B80AD0012FD44 /* LQKSolidColorEffect.h */,
-				A92286871F9B80AD0012FD44 /* LQKLiquidNode.h */,
-				A92286881F9B80AD0012FD44 /* LQKLiquidEffect.h */,
-				A92286891F9B80AD0012FD44 /* LQKLiquidParticleFactory.m */,
+				A92286811F9B80AC0012FD44 /* LiquidFilter.h */,
+				A92286851F9B80AD0012FD44 /* LiquidFilter.m */,
+				A92286871F9B80AD0012FD44 /* LiquidNode.h */,
+				A92286821F9B80AD0012FD44 /* LiquidNode.m */,
+				A92286831F9B80AD0012FD44 /* LiquidParticleFactory.h */,
+				A92286891F9B80AD0012FD44 /* LiquidParticleFactory.m */,
+				A92286861F9B80AD0012FD44 /* SolidColorEffect.h */,
+				A92286801F9B80AC0012FD44 /* SolidColorEffect.m */,
 				A922868A1F9B80AD0012FD44 /* LQKImageUtils.h */,
+				A92286841F9B80AD0012FD44 /* LQKImageUtils.m */,
+				A92286881F9B80AD0012FD44 /* LQKLiquidEffect.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -197,8 +197,8 @@
 		A922868B1F9B80AD0012FD44 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */,
 				A922868D1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.h */,
+				A922868C1F9B80AD0012FD44 /* LQKImageUtils+iOSUtils.m */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -386,11 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A92286931F9B80C80012FD44 /* LQKSolidColorEffect.m in Sources */,
-				A92286951F9B80C80012FD44 /* LQKLiquidNode.m in Sources */,
+				A92286931F9B80C80012FD44 /* SolidColorEffect.m in Sources */,
+				A92286951F9B80C80012FD44 /* LiquidNode.m in Sources */,
 				A92286971F9B80C80012FD44 /* LQKImageUtils.m in Sources */,
-				A92286981F9B80C80012FD44 /* LQKCILiquidFilter.m in Sources */,
-				A922869C1F9B80C80012FD44 /* LQKLiquidParticleFactory.m in Sources */,
+				A92286981F9B80C80012FD44 /* LiquidFilter.m in Sources */,
+				A922869C1F9B80C80012FD44 /* LiquidParticleFactory.m in Sources */,
 				A922869E1F9B80C80012FD44 /* LQKImageUtils+iOSUtils.m in Sources */,
 				A922864F1F9B807D0012FD44 /* GameScene.m in Sources */,
 				A92286521F9B807D0012FD44 /* GameViewController.m in Sources */,
