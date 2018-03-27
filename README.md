@@ -3,7 +3,7 @@ Demonstrates a practical approach for liquid visualization using SpriteKit and C
 
 # Demo 
 
-<img src="https://user-images.githubusercontent.com/5098753/37828607-0923edb6-2ead-11e8-806b-9263cb5ef6a7.gif" width="400">
+<img src="https://user-images.githubusercontent.com/5098753/37984728-c5783882-31ff-11e8-9463-9673329a0aae.gif" width="350">
 
 # Author 
 [Astemir Eleev](https://github.com/jVirus)
