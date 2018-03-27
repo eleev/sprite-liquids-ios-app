@@ -15,15 +15,15 @@
     [super viewDidLoad];
 
     // Load the SKScene from 'GameScene.sks'
-    GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
+    _scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
     
     // Set the scale mode to scale to fit the window
-    scene.scaleMode = SKSceneScaleModeAspectFit;
+    _scene.scaleMode = SKSceneScaleModeAspectFit;
     
     SKView *skView = (SKView *)self.view;
     
     // Present the scene
-    [skView presentScene:scene];
+    [skView presentScene: _scene];
     
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
@@ -52,6 +52,13 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+#pragma MARK: - Actions
+
+- (IBAction)cleanAction:(UIButton *)sender {
+    [_scene removeLiquid];
+    [_scene createaLiquid:90];
 }
 
 @end
