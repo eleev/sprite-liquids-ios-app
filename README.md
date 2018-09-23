@@ -6,7 +6,9 @@
 [![Framework](https://img.shields.io/badge/frameworks-SpriteKit-ff69b4.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
 
-**Last Update: 12/September/2018.**
+**Last Update: 21/September/2018.**
+
+![](logo-sprite_liquids.jpeg)
 
 # ✍️ About 
 Demonstrates a practical approach for liquid visualization using SpriteKit and CoreImage frameworks 💧. Feel free to use this development in your `games`, as part of your `UI` or to `visualize` something. `Swift` version is planned and will be added as well `optimization` and creation of more `conscious API`.
